@@ -34,13 +34,16 @@ The project focuses on combining modern frontend development with generative AI 
 ---
 
 ## 📂 Project Structure
+
+```text
 src/
-├── components/ # Reusable UI components
-├── pages/ # Application pages
-├── hooks/ # Custom React hooks
-├── integrations/ # External service integrations
-├── types/ # TypeScript type definitions
-└── App.tsx # Main application entry point
+├── components/        # Reusable UI components
+├── pages/             # Application pages
+├── hooks/             # Custom React hooks
+├── integrations/      # External service integrations
+├── types/             # TypeScript type definitions
+└── App.tsx            # Main application entry point
+
 
 
 ---
