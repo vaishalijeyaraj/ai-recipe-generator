@@ -48,6 +48,7 @@ src/
 
 ---
 
+```md
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
@@ -61,32 +62,31 @@ src/
 git clone https://github.com/vaishalijeyaraj/ai-recipe-generator.git
 
 # Navigate into the project directory
-cd <your-repo-name>
+cd ai-recipe-generator
 
 # Install dependencies
 npm install
 
 # Start the development server
 npm run dev
-
-
 The application will be available at:
 👉 http://localhost:5173
 
 
-🔐 Environment Variables
+```md
+## 🔐 Environment Variables
 
-Create a .env file in the root directory and add the following:
+Create a `.env` file in the root directory and add the following:
 
+```env
 VITE_GEMINI_API_KEY=your_api_key_here
 
+```md
+## ⭐ Acknowledgements
 
-⭐ Acknowledgements
-
-Google Gemini API
-React ecosystem
-Tailwind CSS community
-
+- Google Gemini API  
+- React ecosystem  
+- Tailwind CSS community
 
 ---
 
