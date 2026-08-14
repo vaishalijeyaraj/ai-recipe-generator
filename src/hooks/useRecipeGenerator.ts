@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { supabase } from '@/integrations/supabase/client';
 import { Recipe, RecipePreferences } from '@/types/recipe';
 import { useToast } from '@/hooks/use-toast';
 
@@ -23,16 +22,16 @@ export function useRecipeGenerator() {
     setError(null);
 
     try {
-      const { data, error: functionError } = await supabase.functions.invoke('generate-recipe', {
-        body: preferences,
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/generate-recipe`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(preferences),
       });
 
-      if (functionError) {
-        throw new Error(functionError.message);
-      }
+      const data = await response.json();
 
-      if (data?.error) {
-        throw new Error(data.error);
+      if (!response.ok) {
+        throw new Error(data.error || 'Server error');
       }
 
       if (!data?.recipe) {
