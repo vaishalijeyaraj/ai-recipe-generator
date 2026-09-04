@@ -12,6 +12,78 @@ app.use(express.json());
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-3.6-flash" });
 
+async function generateWithRetry(prompt, maxAttempts = 3) {
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      const result = await model.generateContent(prompt);
+      return result;
+    } catch (err) {
+      const isLastAttempt = attempt === maxAttempts;
+      const isOverloaded = err.message.includes("503") || err.message.includes("overloaded");
+
+      if (isLastAttempt || !isOverloaded) {
+        throw err; // give up — either out of attempts, or it's a different kind of error
+      }
+
+      const waitTime = attempt * 2000; // 2s, then 4s, then 6s
+      console.log(`  Gemini busy, retrying in ${waitTime / 1000}s (attempt ${attempt}/${maxAttempts})...`);
+      await new Promise((resolve) => setTimeout(resolve, waitTime));
+    }
+  }
+}
+
+
+
+async function checkFeasibility(ingredients, dietaryPreference) {
+  if (dietaryPreference === "none") {
+    return { feasible: true, conflicts: [] };
+  }
+
+  const prompt = `You are a friendly, encouraging chef instructor helping a home cook. Someone wants a recipe using these ingredients: ${ingredients.join(", ")}. They want the recipe to be ${dietaryPreference}.
+
+Check if each ingredient realistically fits a ${dietaryPreference} diet. For any ingredient that does NOT fit, explain it like a chef mentoring a beginner — warm, simple, no jargon, and always include real, approximate numbers to make the difference concrete (like grams of carbs, or whatever is relevant to this diet).
+
+Respond with ONLY valid JSON, no markdown fences, matching exactly this structure:
+{
+  "feasible": true or false,
+  "conflicts": [
+    {
+      "ingredient": "the ingredient name",
+      "issue": "one plain-language sentence on why it doesn't fit, with a real approximate number",
+      "why_it_matters": "one plain-language sentence on why this matters for this diet",
+      "suggestion": "a specific substitute ingredient",
+      "why_the_swap_works": "one plain-language sentence on why the substitute works better, with a real approximate number for comparison"
+    }
+  ]
+}
+
+If every ingredient genuinely fits the diet, return "feasible": true and an empty conflicts array. Only flag real, clear conflicts — don't be overly strict about minor or debatable cases.`;
+
+  const result = await generateWithRetry(prompt);
+  let text = result.response.text().trim();
+  text = text.replace(/```(?:json)?\s*/g, "").replace(/```\s*$/g, "").trim();
+
+  return JSON.parse(text);
+}
+
+
+app.post("/check-feasibility", async (req, res) => {
+  const { ingredients, dietaryPreference } = req.body;
+
+  if (!ingredients || ingredients.length < 2) {
+    return res.status(400).json({ error: "Please provide at least 2 ingredients" });
+  }
+
+  try {
+    const result = await checkFeasibility(ingredients, dietaryPreference);
+    res.json(result);
+  } catch (err) {
+    console.error("Error checking feasibility:", err.message);
+    res.status(500).json({ error: err.message || "Failed to check feasibility" });
+  }
+});
+
+
 app.post("/generate-recipe", async (req, res) => {
   const { ingredients, dietaryPreference, cuisineType, servings, cookingTime } = req.body;
 
@@ -50,7 +122,7 @@ Respond with ONLY valid JSON, no markdown fences, matching exactly this structur
 }`;
 
   try {
-    const result = await model.generateContent(prompt);
+    const result = await generateWithRetry(prompt);
     let text = result.response.text().trim();
     text = text.replace(/```(?:json)?\s*/g, "").replace(/```\s*$/g, "").trim();
 
