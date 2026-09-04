@@ -1,0 +1,106 @@
+{
+  "testCase": {
+    "id": 9,
+    "ingredients": [
+      "chicken",
+      "rice"
+    ],
+    "dietaryPreference": "none",
+    "cuisineType": "any",
+    "servings": 1,
+    "cookingTime": "medium"
+  },
+  "response": {
+    "recipe": {
+      "title": "Pan-Seared Crispy Chicken Thigh with Garlic-Herb Rice",
+      "description": "A refined, single-serve skillet dish featuring crisp-skinned chicken cooked directly over aromatic garlic and herb-infused jasmine rice.",
+      "prepTime": "15 mins",
+      "cookTime": "25 mins",
+      "totalTime": "40 mins",
+      "servings": 1,
+      "difficulty": "Intermediate",
+      "ingredients": [
+        {
+          "item": "Bone-in, skin-on chicken thigh",
+          "amount": "1 (about 7 oz)"
+        },
+        {
+          "item": "Jasmine rice, rinsed",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "Low-sodium chicken broth",
+          "amount": "1 cup"
+        },
+        {
+          "item": "Olive oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Unsalted butter",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Garlic",
+          "amount": "1 clove, minced"
+        },
+        {
+          "item": "Fresh thyme leaves",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "Fresh flat-leaf parsley, chopped",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Lemon zest",
+          "amount": "1/2 tsp"
+        },
+        {
+          "item": "Kosher salt and black pepper",
+          "amount": "To taste"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Pat chicken thigh completely dry with paper towels and season generously with kosher salt, black pepper, and fresh thyme."
+        },
+        {
+          "step": 2,
+          "text": "Heat olive oil in a small heavy-bottomed skillet over medium-high heat. Place chicken skin-side down and sear undisturbed for 6-8 minutes until deeply golden and crisp."
+        },
+        {
+          "step": 3,
+          "text": "Flip chicken thigh, sear for 2 additional minutes, then temporarily transfer to a plate."
+        },
+        {
+          "step": 4,
+          "text": "Reduce heat to medium, add minced garlic to the rendering fat, and sauté for 30 seconds until fragrant. Add rinsed rice and stir for 1-2 minutes to toast the grains."
+        },
+        {
+          "step": 5,
+          "text": "Pour in chicken broth, scrape up crispy browned bits from the pan bottom, and bring to a simmer. Nestle chicken thigh back on top, skin-side up."
+        },
+        {
+          "step": 6,
+          "text": "Cover tightly with a lid, reduce heat to low, and simmer undisturbed for 15 minutes until rice is tender and chicken reaches an internal temperature of 165°F (74°C)."
+        },
+        {
+          "step": 7,
+          "text": "Remove from heat and let stand covered for 5 minutes. Gently fold butter, fresh parsley, and lemon zest into the rice around the chicken before serving."
+        }
+      ],
+      "tips": [
+        "Drying the chicken skin thoroughly before searing is essential for achieving ultra-crispy skin.",
+        "Rinsing the jasmine rice removes excess surface starch, ensuring fluffy, separate grains."
+      ],
+      "nutritionInfo": {
+        "calories": "580",
+        "protein": "38g",
+        "carbs": "45g",
+        "fat": "24g"
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "testCase": {
+    "id": 11,
+    "ingredients": [
+      "banana",
+      "oats"
+    ],
+    "dietaryPreference": "none",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "medium"
+  },
+  "response": {
+    "recipe": {
+      "title": "Cardamom & Caramelized Banana Baked Oats",
+      "description": "An elevated breakfast creation featuring warm aromatic cardamom, rich mashed banana oats, toasted pecans, and a caramelized banana topping.",
+      "prepTime": "15 mins",
+      "cookTime": "30 mins",
+      "totalTime": "45 mins",
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        {
+          "item": "Ripe bananas",
+          "amount": "2 medium"
+        },
+        {
+          "item": "Old-fashioned rolled oats",
+          "amount": "1 cup"
+        },
+        {
+          "item": "Whole milk or oat milk",
+          "amount": "1 cup"
+        },
+        {
+          "item": "Large egg",
+          "amount": "1"
+        },
+        {
+          "item": "Pure maple syrup",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Unsalted butter (melted)",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Baking powder",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "Ground cinnamon",
+          "amount": "1/2 tsp"
+        },
+        {
+          "item": "Ground cardamom",
+          "amount": "1/4 tsp"
+        },
+        {
+          "item": "Sea salt",
+          "amount": "1/4 tsp"
+        },
+        {
+          "item": "Toasted pecans, chopped",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Dark chocolate chips (70%)",
+          "amount": "2 tbsp"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Preheat your oven to 375°F (190°C) and lightly butter two 8-ounce ceramic ramekins or a small 2-person baking dish."
+        },
+        {
+          "step": 2,
+          "text": "In a medium bowl, whisk together the rolled oats, baking powder, ground cinnamon, ground cardamom, and sea salt."
+        },
+        {
+          "step": 3,
+          "text": "In a separate bowl, thoroughly mash 1 banana. Whisk in the egg, milk, melted butter, and 1 tablespoon of maple syrup until smooth."
+        },
+        {
+          "step": 4,
+          "text": "Pour the wet mixture into the dry oat mixture and stir until combined. Gently fold in the dark chocolate chips and half of the chopped pecans."
+        },
+        {
+          "step": 5,
+          "text": "Divide the oat mixture evenly between the prepared ramekins. Slice the second banana into diagonal rounds and arrange them decoratively on top, pressing lightly into the batter."
+        },
+        {
+          "step": 6,
+          "text": "Bake in the preheated oven for 28-30 minutes until the edges are golden brown and the center is set."
+        },
+        {
+          "step": 7,
+          "text": "Remove from oven, sprinkle with remaining pecans, and drizzle the remaining 1 tablespoon of maple syrup over the hot baked oats before serving."
+        }
+      ],
+      "tips": [
+        "Use bananas with heavy brown spots for maximum natural sweetness and deep aromatic flavor.",
+        "For a restaurant-style finish, sprinkle a pinch of raw turbinado sugar over the sliced bananas before baking to create a crunchy, caramelized crust."
+      ],
+      "nutritionInfo": {
+        "calories": "410",
+        "protein": "11g",
+        "carbs": "65g",
+        "fat": "13g"
+      }
+    }
+  }
+}

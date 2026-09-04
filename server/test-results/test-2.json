@@ -1,0 +1,107 @@
+{
+  "testCase": {
+    "id": 2,
+    "ingredients": [
+      "eggs",
+      "flour",
+      "milk"
+    ],
+    "dietaryPreference": "vegan",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "medium"
+  },
+  "response": {
+    "recipe": {
+      "title": "Gourmet Vegan Dutch Baby with Warm Berry Compote",
+      "description": "A dramatic, golden-brown vegan Dutch baby pancake with crisp puffy edges and a tender center, topped with a luscious maple-berry compote.",
+      "prepTime": "15 mins",
+      "cookTime": "25 mins",
+      "totalTime": "40 mins",
+      "servings": 2,
+      "difficulty": "Medium",
+      "ingredients": [
+        {
+          "item": "Vegan egg substitute (such as JUST Egg)",
+          "amount": "3/4 cup"
+        },
+        {
+          "item": "All-purpose flour",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "Unsweetened oat milk",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "Vegan butter",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Maple syrup",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Vanilla extract",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "Sea salt",
+          "amount": "1/4 tsp"
+        },
+        {
+          "item": "Fresh mixed berries",
+          "amount": "1 cup"
+        },
+        {
+          "item": "Fresh lemon juice",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Powdered sugar",
+          "amount": "1 tbsp"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Preheat your oven to 425°F (220°C) and place a 10-inch cast-iron skillet on the center rack to heat completely."
+        },
+        {
+          "step": 2,
+          "text": "In a high-speed blender, combine the vegan egg substitute, all-purpose flour, unsweetened oat milk, vanilla extract, 1 tablespoon maple syrup, and sea salt. Blend on high for 30 seconds until fully combined, smooth, and slightly frothy."
+        },
+        {
+          "step": 3,
+          "text": "Using heavy-duty oven mitts, carefully remove the hot skillet from the oven. Add the vegan butter, swirling the skillet until it melts completely and coats the bottom and sides."
+        },
+        {
+          "step": 4,
+          "text": "Immediately pour the batter into the center of the sizzling skillet."
+        },
+        {
+          "step": 5,
+          "text": "Bake for 22 to 25 minutes until the pancake is puffed up, golden brown, and set in the center. Do not open the oven door during the first 15 minutes of baking."
+        },
+        {
+          "step": 6,
+          "text": "While the Dutch baby bakes, combine the mixed berries, lemon juice, and remaining 1 tablespoon maple syrup in a small saucepan over medium heat. Cook for 5 to 7 minutes until the berries burst and create a glossy compote."
+        },
+        {
+          "step": 7,
+          "text": "Remove the pancake from the oven, spoon the warm berry compote over the center, dust generously with powdered sugar, and serve immediately."
+        }
+      ],
+      "tips": [
+        "Preheating the cast-iron skillet until smoking hot is essential for creating the steam needed to lift the batter.",
+        "For the best texture, ensure your vegan egg substitute and oat milk are at room temperature before blending."
+      ],
+      "nutritionInfo": {
+        "calories": "380",
+        "protein": "10g",
+        "carbs": "54g",
+        "fat": "14g"
+      }
+    }
+  }
+}

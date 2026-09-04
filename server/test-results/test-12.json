@@ -1,0 +1,102 @@
+{
+  "testCase": {
+    "id": 12,
+    "ingredients": [
+      "leftover rice",
+      "egg"
+    ],
+    "dietaryPreference": "none",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "quick"
+  },
+  "response": {
+    "recipe": {
+      "title": "Chef's Signature Golden Egg Fried Rice",
+      "description": "A refined Cantonese-style golden fried rice where egg yolks coat every grain of fragrant rice, elevated with toasted garlic, butter, and caramelized soy sauce.",
+      "prepTime": "10 mins",
+      "cookTime": "10 mins",
+      "totalTime": "20 mins",
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        {
+          "item": "Day-old leftover white rice",
+          "amount": "3 cups"
+        },
+        {
+          "item": "Large eggs",
+          "amount": "3"
+        },
+        {
+          "item": "Scallions",
+          "amount": "3 stalks, finely chopped"
+        },
+        {
+          "item": "Garlic",
+          "amount": "3 cloves, minced"
+        },
+        {
+          "item": "Soy sauce",
+          "amount": "1.5 tbsp"
+        },
+        {
+          "item": "Toasted sesame oil",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "Neutral cooking oil",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Unsalted butter",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "White pepper",
+          "amount": "1/4 tsp"
+        },
+        {
+          "item": "Salt",
+          "amount": "To taste"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Separate 2 egg yolks from their whites. In a large bowl, combine the 2 egg yolks with cold leftover rice, mixing thoroughly until every grain is coated in a vibrant golden hue. Whisk the leftover egg whites together with the 1 remaining whole egg in a small bowl."
+        },
+        {
+          "step": 2,
+          "text": "Heat 1 tablespoon of neutral oil in a wok or large skillet over medium-high heat. Pour in the whisked egg mixture and scramble gently until just soft-set. Remove from the pan and set aside."
+        },
+        {
+          "step": 3,
+          "text": "Add the remaining 1 tablespoon of oil and butter to the hot pan. Add the minced garlic and the white stems of the chopped scallions; stir-fry for 30 seconds until fragrant."
+        },
+        {
+          "step": 4,
+          "text": "Increase heat to high and add the yolk-coated rice. Stir-fry vigorously, breaking up any clumps, for 3 to 4 minutes until the rice becomes hot, fluffy, and fragrant."
+        },
+        {
+          "step": 5,
+          "text": "Drizzle soy sauce along the hot edges of the pan so it caramelizes instantly, then toss to integrate evenly with the rice. Season with white pepper and salt."
+        },
+        {
+          "step": 6,
+          "text": "Fold the soft-scrambled eggs and reserved green scallion tops back into the rice. Remove from heat, finish with a drizzle of toasted sesame oil, and serve hot."
+        }
+      ],
+      "tips": [
+        "Coating cold rice with raw egg yolks prior to cooking creates non-sticky, distinct grains with a beautiful golden color.",
+        "Drizzling soy sauce onto the scorching metal sides of the pan caramelizes the sauce, imparting an essential smoky 'wok hei' flavor."
+      ],
+      "nutritionInfo": {
+        "calories": "430",
+        "protein": "14g",
+        "carbs": "56g",
+        "fat": "16g"
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "testCase": {
+    "id": 3,
+    "ingredients": [
+      "shrimp",
+      "garlic"
+    ],
+    "dietaryPreference": "vegetarian",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "medium"
+  },
+  "response": {
+    "recipe": {
+      "title": "Gourmet Garlic Butter Vegan Shrimp Scampi",
+      "description": "A classic Italian-inspired scampi featuring tender plant-based shrimp tossed in a velvety roasted garlic, white wine, and lemon sauce served over al dente linguine.",
+      "prepTime": "15 mins",
+      "cookTime": "20 mins",
+      "totalTime": "35 mins",
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        {
+          "item": "Plant-based vegetarian shrimp",
+          "amount": "250g"
+        },
+        {
+          "item": "Fresh garlic, finely minced",
+          "amount": "6 cloves"
+        },
+        {
+          "item": "Linguine pasta",
+          "amount": "180g"
+        },
+        {
+          "item": "Vegan butter",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "Extra virgin olive oil",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Dry white wine (vegan friendly)",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "Fresh lemon juice",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Lemon zest",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "Fresh flat-leaf parsley, finely chopped",
+          "amount": "1/4 cup"
+        },
+        {
+          "item": "Red pepper flakes",
+          "amount": "1/4 tsp"
+        },
+        {
+          "item": "Sea salt and freshly ground black pepper",
+          "amount": "To taste"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Bring a large pot of salted water to a boil. Add the linguine and cook according to package instructions until al dente. Reserve 1/4 cup of starchy pasta water, then drain the pasta."
+        },
+        {
+          "step": 2,
+          "text": "While the pasta cooks, heat 1 tablespoon of olive oil in a large skillet over medium heat. Add the plant-based shrimp and sear for 3 to 4 minutes per side until warm and lightly golden. Remove the shrimp from the skillet and set aside."
+        },
+        {
+          "step": 3,
+          "text": "In the same skillet, reduce heat to low and add the remaining olive oil along with 1 tablespoon of vegan butter. Add the minced garlic and red pepper flakes, sautéing gently for 1 to 2 minutes until sweet and fragrant without browning."
+        },
+        {
+          "step": 4,
+          "text": "Pour in the dry white wine and lemon juice, turning the heat up to medium to simmer. Let the liquid reduce by half, about 4 to 5 minutes."
+        },
+        {
+          "step": 5,
+          "text": "Whisk in the remaining 2 tablespoons of cold vegan butter to emulsify the sauce into a glossy consistency. Season with salt and black pepper to taste."
+        },
+        {
+          "step": 6,
+          "text": "Add the cooked linguine and seared vegetarian shrimp to the skillet. Toss continuously for 2 minutes to allow the pasta to absorb the garlic sauce, adding reserved pasta water 1 tablespoon at a time if needed."
+        },
+        {
+          "step": 7,
+          "text": "Remove from heat, fold in the lemon zest and fresh chopped parsley, and serve immediately in warm pasta bowls."
+        }
+      ],
+      "tips": [
+        "Look for konjac-based or soy-protein vegetarian shrimp in asian markets or health food stores for the best realistic texture.",
+        "Do not let the garlic brown during cooking, as scorched garlic becomes bitter and ruins the delicate emulsion sauce."
+      ],
+      "nutritionInfo": {
+        "calories": "490",
+        "protein": "18g",
+        "carbs": "64g",
+        "fat": "18g"
+      }
+    }
+  }
+}

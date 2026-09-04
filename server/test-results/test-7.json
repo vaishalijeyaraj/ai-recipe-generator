@@ -1,0 +1,102 @@
+{
+  "testCase": {
+    "id": 7,
+    "ingredients": [
+      "chicken",
+      "rice"
+    ],
+    "dietaryPreference": "none",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "quick"
+  },
+  "response": {
+    "recipe": {
+      "title": "Quick Pan-Seared Lemon Herb Chicken with Garlic Butter Rice",
+      "description": "Tender, juicy pan-seared chicken cutlets served over fragrant garlic-infused jasmine rice with a silky lemon pan sauce.",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        {
+          "item": "Boneless, skinless chicken breasts (cut into thin cutlets)",
+          "amount": "1 lb"
+        },
+        {
+          "item": "Pre-cooked Jasmine rice (or quick-cook rice)",
+          "amount": "2 cups"
+        },
+        {
+          "item": "Unsalted butter",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Extra virgin olive oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Garlic (minced)",
+          "amount": "3 cloves"
+        },
+        {
+          "item": "Low-sodium chicken broth",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "Fresh lemon juice",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Fresh parsley (chopped)",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Salt and freshly cracked black pepper",
+          "amount": "To taste"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Season the chicken cutlets generously on both sides with salt and black pepper."
+        },
+        {
+          "step": 2,
+          "text": "Heat olive oil and 1 tablespoon of butter in a large skillet over medium-high heat until shimmering."
+        },
+        {
+          "step": 3,
+          "text": "Add chicken cutlets and sear for 3 to 4 minutes per side until golden brown and cooked through (internal temperature of 165°F). Transfer chicken to a plate to rest."
+        },
+        {
+          "step": 4,
+          "text": "Reduce heat to medium, add minced garlic to the same skillet, and sauté for 30 seconds until fragrant."
+        },
+        {
+          "step": 5,
+          "text": "Pour in chicken broth and lemon juice, using a wooden spoon to scrape up any browned bits from the skillet. Simmer for 2 minutes."
+        },
+        {
+          "step": 6,
+          "text": "Stir in the pre-cooked Jasmine rice and the remaining 1 tablespoon of butter, tossing constantly for 2 minutes until hot and well coated."
+        },
+        {
+          "step": 7,
+          "text": "Slice chicken thinly, divide garlic rice between two plates, top with sliced chicken, and finish with a sprinkle of fresh parsley."
+        }
+      ],
+      "tips": [
+        "Slice chicken breasts horizontally into cutlets or pound them to 1/2-inch thickness so they cook thoroughly in under 8 minutes.",
+        "Using microwaveable pouch rice or leftover chilled cooked rice saves precious time while maintaining perfect texture."
+      ],
+      "nutritionInfo": {
+        "calories": "510",
+        "protein": "48g",
+        "carbs": "44g",
+        "fat": "15g"
+      }
+    }
+  }
+}

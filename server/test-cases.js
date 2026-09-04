@@ -1,0 +1,17 @@
+export const testCases = [
+  { id: 1, ingredients: ["paneer", "spinach"], dietaryPreference: "vegan", cuisineType: "any", servings: 2, cookingTime: "medium" },
+  { id: 2, ingredients: ["eggs", "flour", "milk"], dietaryPreference: "vegan", cuisineType: "any", servings: 2, cookingTime: "medium" },
+  { id: 3, ingredients: ["shrimp", "garlic"], dietaryPreference: "vegetarian", cuisineType: "any", servings: 2, cookingTime: "medium" },
+  { id: 4, ingredients: ["cheese", "tomato"], dietaryPreference: "dairy-free", cuisineType: "any", servings: 2, cookingTime: "medium" },
+  { id: 5, ingredients: ["soy sauce", "tofu", "rice"], dietaryPreference: "gluten-free", cuisineType: "any", servings: 2, cookingTime: "medium" },
+  { id: 6, ingredients: ["rice", "quinoa"], dietaryPreference: "keto", cuisineType: "any", servings: 2, cookingTime: "medium" },
+  { id: 7, ingredients: ["chicken", "rice"], dietaryPreference: "none", cuisineType: "any", servings: 2, cookingTime: "quick" },
+  { id: 8, ingredients: ["lentils", "potatoes"], dietaryPreference: "none", cuisineType: "any", servings: 2, cookingTime: "quick" },
+  { id: 9, ingredients: ["chicken", "rice"], dietaryPreference: "none", cuisineType: "any", servings: 1, cookingTime: "medium" },
+  { id: 10, ingredients: ["chicken", "rice"], dietaryPreference: "none", cuisineType: "any", servings: 8, cookingTime: "medium" },
+  { id: 11, ingredients: ["banana", "oats"], dietaryPreference: "none", cuisineType: "any", servings: 2, cookingTime: "medium" },
+  { id: 12, ingredients: ["leftover rice", "egg"], dietaryPreference: "none", cuisineType: "any", servings: 2, cookingTime: "quick" },
+  { id: 13, ingredients: ["broccoli", "cheese"], dietaryPreference: "keto", cuisineType: "any", servings: 2, cookingTime: "medium" },
+  { id: 14, ingredients: ["tofu", "broccoli"], dietaryPreference: "vegan", cuisineType: "any", servings: 2, cookingTime: "quick" },
+  { id: 15, ingredients: ["ground beef", "pasta"], dietaryPreference: "dairy-free", cuisineType: "any", servings: 2, cookingTime: "medium" },
+];

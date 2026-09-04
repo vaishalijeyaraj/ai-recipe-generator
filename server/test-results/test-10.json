@@ -1,0 +1,126 @@
+{
+  "testCase": {
+    "id": 10,
+    "ingredients": [
+      "chicken",
+      "rice"
+    ],
+    "dietaryPreference": "none",
+    "cuisineType": "any",
+    "servings": 8,
+    "cookingTime": "medium"
+  },
+  "response": {
+    "recipe": {
+      "title": "One-Pan Mediterranean Garlic Herb Chicken and Rice",
+      "description": "A comforting chef-crafted one-pan meal featuring succulent seared chicken thighs nestled in fragrant basmati rice infused with garlic, fresh herbs, white wine, and lemon.",
+      "prepTime": "15 mins",
+      "cookTime": "35 mins",
+      "totalTime": "50 mins",
+      "servings": 8,
+      "difficulty": "Medium",
+      "ingredients": [
+        {
+          "item": "Chicken thighs (boneless or skin-on)",
+          "amount": "3.5 lbs"
+        },
+        {
+          "item": "Olive oil",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "Unsalted butter",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Yellow onion, finely diced",
+          "amount": "1 large"
+        },
+        {
+          "item": "Garlic, minced",
+          "amount": "6 cloves"
+        },
+        {
+          "item": "Long-grain Basmati rice, rinsed",
+          "amount": "2.5 cups"
+        },
+        {
+          "item": "Chicken bone broth",
+          "amount": "4 cups"
+        },
+        {
+          "item": "Dry white wine (e.g., Sauvignon Blanc)",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "Lemon zest and juice",
+          "amount": "1 lemon"
+        },
+        {
+          "item": "Fresh thyme and oregano, finely chopped",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Smoked paprika",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "Kosher salt and fresh black pepper",
+          "amount": "To taste"
+        },
+        {
+          "item": "Fresh baby spinach",
+          "amount": "3 cups"
+        },
+        {
+          "item": "Fresh parsley, chopped for garnish",
+          "amount": "1/4 cup"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Season chicken thighs generously with smoked paprika, half of the chopped fresh herbs, salt, and black pepper."
+        },
+        {
+          "step": 2,
+          "text": "Heat 2 tablespoons olive oil in a wide Dutch oven or braiser over medium-high heat. Sear chicken skin-side down for 5–6 minutes until crisp and golden. Flip and sear for 3 minutes, then set aside on a plate."
+        },
+        {
+          "step": 3,
+          "text": "Reduce heat to medium and add remaining oil and butter. Sauté diced onion for 4 minutes until translucent, then add minced garlic and remaining fresh herbs, cooking for 1 minute until fragrant."
+        },
+        {
+          "step": 4,
+          "text": "Stir in rinsed basmati rice and toast with aromatics for 2 minutes, ensuring each grain is coated."
+        },
+        {
+          "step": 5,
+          "text": "Deglaze the pan with white wine, scraping up all browned bits from the bottom. Simmer for 2 minutes until liquid reduces by half."
+        },
+        {
+          "step": 6,
+          "text": "Pour in chicken bone broth, lemon zest, and lemon juice. Bring to a simmer, then nestle seared chicken thighs and resting juices back into the pan."
+        },
+        {
+          "step": 7,
+          "text": "Cover with a tight-fitting lid, reduce heat to low, and cook for 20 minutes until rice is tender and chicken reaches an internal temperature of 165°F (74°C)."
+        },
+        {
+          "step": 8,
+          "text": "Remove from heat, fold fresh baby spinach around the chicken, cover, and allow to rest off heat for 5 minutes to wilt spinach. Garnish with fresh parsley before serving."
+        }
+      ],
+      "tips": [
+        "Rinsing basmati rice under cold water until it runs clear removes excess surface starch, ensuring fluffy, distinct grains.",
+        "If using skin-on thighs, flash the finished dish under an oven broiler uncovered for 2 minutes to restore skin crispiness."
+      ],
+      "nutritionInfo": {
+        "calories": "520",
+        "protein": "42g",
+        "carbs": "45g",
+        "fat": "18g"
+      }
+    }
+  }
+}

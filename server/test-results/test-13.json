@@ -1,0 +1,110 @@
+{
+  "testCase": {
+    "id": 13,
+    "ingredients": [
+      "broccoli",
+      "cheese"
+    ],
+    "dietaryPreference": "keto",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "medium"
+  },
+  "response": {
+    "recipe": {
+      "title": "Gourmet Broccoli Gratin with Aged Cheddar & Smoked Gouda",
+      "description": "A rich, velvety keto gratin featuring tender blanched broccoli folded into a garlic-infused cream sauce and melted artisan cheeses, finished with a golden crispy top.",
+      "prepTime": "15 mins",
+      "cookTime": "25 mins",
+      "totalTime": "40 mins",
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        {
+          "item": "fresh broccoli florets",
+          "amount": "12 oz (350g)"
+        },
+        {
+          "item": "unsalted butter",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "garlic, minced",
+          "amount": "2 cloves"
+        },
+        {
+          "item": "heavy whipping cream",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "cream cheese, softened",
+          "amount": "2 oz"
+        },
+        {
+          "item": "sharp aged cheddar cheese, shredded",
+          "amount": "1 cup"
+        },
+        {
+          "item": "smoked gouda cheese, shredded",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "crispy cooked bacon, crumbled",
+          "amount": "3 strips"
+        },
+        {
+          "item": "ground nutmeg",
+          "amount": "1/8 tsp"
+        },
+        {
+          "item": "salt and freshly cracked black pepper",
+          "amount": "to taste"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Preheat your oven to 400°F (200°C) and lightly grease a small 1-quart baking dish."
+        },
+        {
+          "step": 2,
+          "text": "Bring a pot of salted water to a boil. Blanch the broccoli florets for 2-3 minutes until tender-crisp. Drain thoroughly and pat completely dry with paper towels."
+        },
+        {
+          "step": 3,
+          "text": "In a saucepan over medium heat, melt the butter. Add the minced garlic and sauté for 1 minute until fragrant without browning."
+        },
+        {
+          "step": 4,
+          "text": "Reduce heat to low and whisk in the heavy whipping cream and softened cream cheese until smooth and warm."
+        },
+        {
+          "step": 5,
+          "text": "Stir in 3/4 cup of sharp cheddar and 1/4 cup of smoked gouda until melted into a rich sauce. Season with nutmeg, salt, and black pepper."
+        },
+        {
+          "step": 6,
+          "text": "Gently fold the blanched broccoli florets into the cheese sauce until thoroughly coated, then transfer the mixture into the prepared baking dish."
+        },
+        {
+          "step": 7,
+          "text": "Top with the remaining cheddar, smoked gouda, and crumbled bacon."
+        },
+        {
+          "step": 8,
+          "text": "Bake for 15-20 minutes until the cheese is bubbling and the top is lightly golden brown. Let rest 5 minutes before serving."
+        }
+      ],
+      "tips": [
+        "Drying the broccoli thoroughly after blanching prevents excess moisture from thinning out the creamy cheese sauce.",
+        "Shred your own cheese from blocks to avoid added starches and anti-caking agents found in pre-shredded bags."
+      ],
+      "nutritionInfo": {
+        "calories": "580",
+        "protein": "24g",
+        "carbs": "9g",
+        "fat": "49g"
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "testCase": {
+    "id": 8,
+    "ingredients": [
+      "lentils",
+      "potatoes"
+    ],
+    "dietaryPreference": "none",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "quick"
+  },
+  "response": {
+    "recipe": {
+      "title": "Quick Spiced Red Lentil and Potato Dal",
+      "description": "A rich, aromatic stew featuring tender Yukon Gold potatoes and fast-cooking red split lentils simmered in coconut milk, garlic, and warm spices.",
+      "prepTime": "10 mins",
+      "cookTime": "18 mins",
+      "totalTime": "28 mins",
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        {
+          "item": "Yukon Gold potatoes, diced into 1/2-inch cubes",
+          "amount": "2 medium"
+        },
+        {
+          "item": "Dry red split lentils, rinsed",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "Olive oil or ghee",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Yellow onion, finely diced",
+          "amount": "1/2 medium"
+        },
+        {
+          "item": "Garlic, minced",
+          "amount": "2 cloves"
+        },
+        {
+          "item": "Fresh ginger, finely grated",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "Yellow curry powder",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Ground cumin",
+          "amount": "1/2 tsp"
+        },
+        {
+          "item": "Vegetable broth",
+          "amount": "2 cups"
+        },
+        {
+          "item": "Full-fat coconut milk",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "Fresh baby spinach",
+          "amount": "1 cup"
+        },
+        {
+          "item": "Fresh lemon juice",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Salt and black pepper",
+          "amount": "To taste"
+        },
+        {
+          "item": "Fresh cilantro, chopped",
+          "amount": "2 tbsp"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Heat oil in a medium pot over medium heat. Add onion and sauté for 3 minutes until soft."
+        },
+        {
+          "step": 2,
+          "text": "Stir in the garlic, ginger, curry powder, and cumin, cooking for 1 minute until fragrant."
+        },
+        {
+          "step": 3,
+          "text": "Add the diced potatoes, rinsed red lentils, and vegetable broth. Bring to a boil over high heat."
+        },
+        {
+          "step": 4,
+          "text": "Reduce heat to medium-low, cover with a lid, and simmer for 12 to 14 minutes until potatoes and lentils are tender."
+        },
+        {
+          "step": 5,
+          "text": "Stir in coconut milk and spinach, allowing the spinach to wilt for 2 minutes."
+        },
+        {
+          "step": 6,
+          "text": "Remove from heat, stir in lemon juice, season with salt and pepper, and garnish with fresh cilantro before serving."
+        }
+      ],
+      "tips": [
+        "Dice the potatoes into small 1/2-inch cubes to ensure they cook completely in under 15 minutes.",
+        "Red lentils break down fast and naturally thicken the broth into a rich, velvety stew."
+      ],
+      "nutritionInfo": {
+        "calories": "420",
+        "protein": "16g",
+        "carbs": "62g",
+        "fat": "14g"
+      }
+    }
+  }
+}

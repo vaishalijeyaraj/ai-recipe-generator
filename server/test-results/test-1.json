@@ -1,0 +1,138 @@
+{
+  "testCase": {
+    "id": 1,
+    "ingredients": [
+      "paneer",
+      "spinach"
+    ],
+    "dietaryPreference": "vegan",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "medium"
+  },
+  "response": {
+    "recipe": {
+      "title": "Vibrant Vegan Palak Paneer",
+      "description": "A luxury plant-based take on the classic Indian favorite. Golden seared artisan vegan paneer cubes simmered in a velvet-smooth, aromatic garlic-spinach gravy enriched with silky cashew cream.",
+      "prepTime": "15 mins",
+      "cookTime": "25 mins",
+      "totalTime": "40 mins",
+      "servings": 2,
+      "difficulty": "Medium",
+      "ingredients": [
+        {
+          "item": "Vegan Paneer (extra-firm tofu, well-pressed)",
+          "amount": "220g"
+        },
+        {
+          "item": "Fresh baby spinach leaves",
+          "amount": "300g"
+        },
+        {
+          "item": "Raw cashews (soaked in hot water for 15 mins)",
+          "amount": "1/4 cup"
+        },
+        {
+          "item": "Neutral vegetable oil",
+          "amount": "1.5 tbsp"
+        },
+        {
+          "item": "Cumin seeds",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "Yellow onion, finely diced",
+          "amount": "1 medium"
+        },
+        {
+          "item": "Garlic, minced",
+          "amount": "4 cloves"
+        },
+        {
+          "item": "Fresh ginger, finely grated",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Green chili or Serrano pepper",
+          "amount": "1 small"
+        },
+        {
+          "item": "Tomato puree",
+          "amount": "1/3 cup"
+        },
+        {
+          "item": "Ground coriander",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "Ground turmeric",
+          "amount": "1/4 tsp"
+        },
+        {
+          "item": "Garam masala",
+          "amount": "1/2 tsp"
+        },
+        {
+          "item": "Dried fenugreek leaves (Kasoori Methi)",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "Fresh lemon juice",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Salt",
+          "amount": "1 tsp (or to taste)"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Blanch the spinach in a pot of boiling salted water for 2 minutes. Transfer immediately to an ice water bath to preserve the brilliant green color. Drain well and blend with the green chili until completely smooth."
+        },
+        {
+          "step": 2,
+          "text": "Blend the soaked cashews with 3 tablespoons of warm water in a high-speed blender until perfectly creamy."
+        },
+        {
+          "step": 3,
+          "text": "Cut the pressed vegan paneer into 3/4-inch cubes. Heat 1/2 tablespoon of oil in a non-stick skillet over medium heat. Pan-sear the paneer cubes for 4-5 minutes, turning occasionally until light golden brown on all sides. Remove and set aside."
+        },
+        {
+          "step": 4,
+          "text": "Heat the remaining 1 tablespoon of oil in the skillet. Add cumin seeds and allow them to crackle for 30 seconds."
+        },
+        {
+          "step": 5,
+          "text": "Add finely diced onion and sauté for 5-6 minutes until translucent and light brown. Add minced garlic and grated ginger, sautéing for another minute until fragrant."
+        },
+        {
+          "step": 6,
+          "text": "Stir in the tomato puree, ground coriander, turmeric, and salt. Cook for 3-4 minutes until the tomatoes soften and oil begins to separate slightly from the masala base."
+        },
+        {
+          "step": 7,
+          "text": "Pour in the pureed spinach along with 3 tablespoons of water. Mix well and let it simmer gently on low heat for 4 minutes."
+        },
+        {
+          "step": 8,
+          "text": "Fold in the cashew cream, seared vegan paneer cubes, garam masala, and crushed kasoori methi. Simmer together for 2 minutes to let the flavors infuse."
+        },
+        {
+          "step": 9,
+          "text": "Remove from heat, stir in fresh lemon juice, adjust seasoning if necessary, and serve immediately with garlic naan or basmati rice."
+        }
+      ],
+      "tips": [
+        "Press the vegan paneer firmly between cloth or paper towels for at least 15 minutes prior to cooking to achieve the perfect bite and prevent splattering.",
+        "Do not overcook the spinach puree after adding it to the skillet; keeping cook time short preserves its brilliant green hue and fresh flavor."
+      ],
+      "nutritionInfo": {
+        "calories": "390",
+        "protein": "19g",
+        "carbs": "24g",
+        "fat": "25g"
+      }
+    }
+  }
+}

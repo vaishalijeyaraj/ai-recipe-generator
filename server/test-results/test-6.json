@@ -1,0 +1,115 @@
+{
+  "testCase": {
+    "id": 6,
+    "ingredients": [
+      "rice",
+      "quinoa"
+    ],
+    "dietaryPreference": "keto",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "medium"
+  },
+  "response": {
+    "recipe": {
+      "title": "Gourmet Keto Mediterranean 'Rice' and 'Quinoa' Herb Pilaf",
+      "description": "A sophisticated, low-carb chef's spin on traditional pilaf, combining light cauliflower rice and nutty hemp seed 'quinoa' tossed in garlic butter, fresh herbs, toasted pine nuts, and tangy feta.",
+      "prepTime": "15 mins",
+      "cookTime": "25 mins",
+      "totalTime": "40 mins",
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        {
+          "item": "Cauliflower rice (freshly grated)",
+          "amount": "3 cups"
+        },
+        {
+          "item": "Hemp seeds (keto quinoa substitute)",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "Unsalted grass-fed butter",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Extra virgin olive oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Shallot, finely minced",
+          "amount": "1 small"
+        },
+        {
+          "item": "Garlic, finely minced",
+          "amount": "3 cloves"
+        },
+        {
+          "item": "Chicken bone broth or rich vegetable broth",
+          "amount": "1/4 cup"
+        },
+        {
+          "item": "Fresh lemon juice and zest",
+          "amount": "1 lemon"
+        },
+        {
+          "item": "Pine nuts, toasted",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Fresh flat-leaf parsley and dill, finely chopped",
+          "amount": "1/4 cup"
+        },
+        {
+          "item": "Crumbled feta cheese",
+          "amount": "2 oz"
+        },
+        {
+          "item": "Sea salt and cracked black pepper",
+          "amount": "To taste"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Place a large skillet over medium heat. Add pine nuts and dry toast for 2-3 minutes until golden and fragrant, then set aside."
+        },
+        {
+          "step": 2,
+          "text": "In the same skillet, melt butter with olive oil over medium-low heat. Add minced shallot and garlic, sweating them for 3-4 minutes until translucent and aromatic without browning."
+        },
+        {
+          "step": 3,
+          "text": "Add the hemp seeds ('quinoa') to the skillet and toast in the butter for 2 minutes to bring out their nutty flavor."
+        },
+        {
+          "step": 4,
+          "text": "Increase heat to medium-high. Add the cauliflower rice and toss well to coat in the garlic-herb butter."
+        },
+        {
+          "step": 5,
+          "text": "Pour in the bone broth and reduce heat to medium. Cover and steam for 4-5 minutes until the cauliflower rice is tender yet retains a slight bite."
+        },
+        {
+          "step": 6,
+          "text": "Remove lid and stir in lemon juice, lemon zest, chopped parsley, dill, toasted pine nuts, salt, and pepper. Cook uncovered for 2 minutes to allow any remaining moisture to evaporate."
+        },
+        {
+          "step": 7,
+          "text": "Divide between two warm bowls, top with crumbled feta cheese, and serve immediately."
+        }
+      ],
+      "tips": [
+        "Squeeze the cauliflower rice in a clean kitchen towel before cooking to remove extra moisture for a fluffier texture.",
+        "Hemp seeds mimic the texture and nutty bite of quinoa while keeping total net carbs minimal.",
+        "Pair with grilled wild salmon or lemon-herb chicken breast for a complete keto feast."
+      ],
+      "nutritionInfo": {
+        "calories": "475",
+        "protein": "17g",
+        "carbs": "9g",
+        "fat": "41g"
+      }
+    }
+  }
+}

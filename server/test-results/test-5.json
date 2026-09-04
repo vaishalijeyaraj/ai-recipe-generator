@@ -1,0 +1,119 @@
+{
+  "testCase": {
+    "id": 5,
+    "ingredients": [
+      "soy sauce",
+      "tofu",
+      "rice"
+    ],
+    "dietaryPreference": "gluten-free",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "medium"
+  },
+  "response": {
+    "recipe": {
+      "title": "Crispy Glazed Tamari Tofu over Fragrant Garlic Rice",
+      "description": "Pan-seared extra-firm tofu coated in a rich, sweet and savory gluten-free soy glaze, served atop light, aromatic garlic-infused jasmine rice.",
+      "prepTime": "15 mins",
+      "cookTime": "25 mins",
+      "totalTime": "40 mins",
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        {
+          "item": "Extra-firm tofu (pressed and cut into 1-inch cubes)",
+          "amount": "14 oz"
+        },
+        {
+          "item": "Jasmine rice (rinsed)",
+          "amount": "1 cup"
+        },
+        {
+          "item": "Gluten-free soy sauce (or Tamari)",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "Cornstarch (gluten-free)",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Water",
+          "amount": "1.5 cups"
+        },
+        {
+          "item": "Maple syrup",
+          "amount": "1.5 tbsp"
+        },
+        {
+          "item": "Rice vinegar",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Toasted sesame oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "Avocado oil (or high-heat cooking oil)",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Garlic (minced)",
+          "amount": "3 cloves"
+        },
+        {
+          "item": "Fresh ginger (finely grated)",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "Green onions (thinly sliced)",
+          "amount": "2 stalks"
+        },
+        {
+          "item": "Toasted sesame seeds",
+          "amount": "1 tbsp"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Combine rinsed jasmine rice and 1.5 cups water in a small saucepan. Bring to a boil, then reduce heat to low, cover, and simmer for 15 minutes. Remove from heat and let rest covered for 10 minutes."
+        },
+        {
+          "step": 2,
+          "text": "Press tofu with paper towels to absorb excess moisture. Gently toss the cubed tofu in cornstarch until each piece is evenly coated."
+        },
+        {
+          "step": 3,
+          "text": "In a small bowl, whisk together the gluten-free soy sauce, maple syrup, rice vinegar, grated ginger, and 1 clove of minced garlic to create the reduction glaze."
+        },
+        {
+          "step": 4,
+          "text": "Heat avocado oil in a large non-stick skillet over medium-high heat. Add tofu cubes in a single layer and pan-fry for 8-10 minutes, turning occasionally until all sides are deep golden and crispy."
+        },
+        {
+          "step": 5,
+          "text": "In a small pan over low heat, warm the sesame oil and remaining 2 cloves of minced garlic for 1 minute until fragrant. Fluff the cooked rice with a fork and gently stir in the warm garlic-sesame oil and half of the green onions."
+        },
+        {
+          "step": 6,
+          "text": "Turn the skillet with the tofu down to low heat. Pour the prepared soy sauce glaze over the crispy tofu and toss gently for 1-2 minutes until the sauce thickens and coats the tofu in a glossy glaze."
+        },
+        {
+          "step": 7,
+          "text": "Divide the garlic rice between two serving bowls, top with the crispy glazed tofu, and garnish with toasted sesame seeds and remaining green onions."
+        }
+      ],
+      "tips": [
+        "Always double-check labels to ensure your soy sauce is certified gluten-free (Tamari is a great naturally gluten-free option).",
+        "Thoroughly pressing moisture out of the tofu is the secret to getting a golden, extra-crispy exterior without deep frying."
+      ],
+      "nutritionInfo": {
+        "calories": "510",
+        "protein": "22g",
+        "carbs": "66g",
+        "fat": "18g"
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "testCase": {
+    "id": 15,
+    "ingredients": [
+      "ground beef",
+      "pasta"
+    ],
+    "dietaryPreference": "dairy-free",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "medium"
+  },
+  "response": {
+    "recipe": {
+      "title": "Tuscan-Style Savory Beef Ragù with Rigatoni",
+      "description": "A rich, slow-simmered Tuscan ground beef ragù layered with aromatics, red wine, and herbs, tossed with al dente rigatoni. Pure comfort food that is entirely dairy-free.",
+      "prepTime": "15 mins",
+      "cookTime": "35 mins",
+      "totalTime": "50 mins",
+      "servings": 2,
+      "difficulty": "Medium",
+      "ingredients": [
+        {
+          "item": "Ground beef (80/20 lean)",
+          "amount": "1/2 lb"
+        },
+        {
+          "item": "Rigatoni or Penne pasta",
+          "amount": "6 oz"
+        },
+        {
+          "item": "Extra virgin olive oil",
+          "amount": "2 tbsp"
+        },
+        {
+          "item": "Yellow onion, finely diced",
+          "amount": "1/2 medium"
+        },
+        {
+          "item": "Carrot, finely diced",
+          "amount": "1 small"
+        },
+        {
+          "item": "Celery stalk, finely diced",
+          "amount": "1 small"
+        },
+        {
+          "item": "Garlic, minced",
+          "amount": "2 cloves"
+        },
+        {
+          "item": "Double-concentrated tomato paste",
+          "amount": "1.5 tbsp"
+        },
+        {
+          "item": "Crushed Italian tomatoes",
+          "amount": "1 cup"
+        },
+        {
+          "item": "Dry red wine (or extra beef stock)",
+          "amount": "1/4 cup"
+        },
+        {
+          "item": "Low-sodium beef stock",
+          "amount": "1/2 cup"
+        },
+        {
+          "item": "Fresh rosemary sprig",
+          "amount": "1"
+        },
+        {
+          "item": "Fresh thyme sprigs",
+          "amount": "2"
+        },
+        {
+          "item": "Kosher salt and black pepper",
+          "amount": "To taste"
+        },
+        {
+          "item": "Fresh flat-leaf parsley, chopped",
+          "amount": "2 tbsp"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Bring a large pot of salted water to a boil for the pasta."
+        },
+        {
+          "step": 2,
+          "text": "Heat 1 tablespoon of olive oil in a deep skillet over medium-high heat. Add ground beef, season with salt and pepper, and brown thoroughly for 6-8 minutes, breaking it up with a wooden spoon. Transfer meat to a plate, leaving rendered fat in the skillet."
+        },
+        {
+          "step": 3,
+          "text": "Add remaining 1 tablespoon olive oil to the skillet along with diced onion, carrot, and celery. Cook over medium heat for 6-7 minutes until vegetables are soft and sweet."
+        },
+        {
+          "step": 4,
+          "text": "Stir in minced garlic and tomato paste. Cook for 2 minutes, stirring constantly until tomato paste turns a deep brick-red color."
+        },
+        {
+          "step": 5,
+          "text": "Pour in red wine to deglaze the pan, scraping up all the savory browned bits from the bottom. Simmer for 2 minutes until reduced by half."
+        },
+        {
+          "step": 6,
+          "text": "Return browned beef to skillet. Add crushed tomatoes, beef stock, rosemary, and thyme. Reduce heat to low, cover partially, and let simmer gently for 20 minutes to meld flavors."
+        },
+        {
+          "step": 7,
+          "text": "While sauce simmers, cook rigatoni according to package directions until al dente. Reserve 1/2 cup of starchy pasta water before draining."
+        },
+        {
+          "step": 8,
+          "text": "Discard rosemary stem and thyme sprigs from sauce. Toss drained pasta directly into ragù over low heat, adding 2-3 tablespoons of reserved pasta water to help the sauce cling to pasta without dairy. Garnish with fresh parsley and serve immediately."
+        }
+      ],
+      "tips": [
+        "Reserving starchy pasta water is essential for dairy-free sauces—it emulsifies with olive oil and tomato juices to create a glossy finish without butter or cheese.",
+        "Finely dicing the soffritto (onion, carrot, celery) allows the vegetables to melt into the meat sauce, providing natural sweetness and body."
+      ],
+      "nutritionInfo": {
+        "calories": "580",
+        "protein": "34g",
+        "carbs": "68g",
+        "fat": "18g"
+      }
+    }
+  }
+}

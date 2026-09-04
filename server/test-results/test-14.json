@@ -1,0 +1,118 @@
+{
+  "testCase": {
+    "id": 14,
+    "ingredients": [
+      "tofu",
+      "broccoli"
+    ],
+    "dietaryPreference": "vegan",
+    "cuisineType": "any",
+    "servings": 2,
+    "cookingTime": "quick"
+  },
+  "response": {
+    "recipe": {
+      "title": "Crispy Sesame Tofu & Broccoli Stir-Fry",
+      "description": "A fast, restaurant-quality vegan stir-fry featuring golden crispy tofu and tender-crisp broccoli tossed in a savory garlic-ginger sesame sauce.",
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "totalTime": "25 mins",
+      "servings": 2,
+      "difficulty": "Easy",
+      "ingredients": [
+        {
+          "item": "extra-firm tofu, pressed and cut into 3/4-inch cubes",
+          "amount": "14 oz"
+        },
+        {
+          "item": "broccoli florets, cut into bite-sized pieces",
+          "amount": "3 cups"
+        },
+        {
+          "item": "cornstarch",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "avocado oil or high-heat vegetable oil",
+          "amount": "1.5 tbsp"
+        },
+        {
+          "item": "garlic, minced",
+          "amount": "3 cloves"
+        },
+        {
+          "item": "fresh ginger, minced",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "low-sodium tamari or soy sauce",
+          "amount": "3 tbsp"
+        },
+        {
+          "item": "pure maple syrup",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "toasted sesame oil",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "rice vinegar",
+          "amount": "1 tsp"
+        },
+        {
+          "item": "red pepper flakes",
+          "amount": "1/4 tsp"
+        },
+        {
+          "item": "toasted sesame seeds",
+          "amount": "1 tbsp"
+        },
+        {
+          "item": "green onions, thinly sliced",
+          "amount": "2 stalks"
+        }
+      ],
+      "instructions": [
+        {
+          "step": 1,
+          "text": "Pat the pressed tofu cubes dry with paper towels, place them in a bowl, and gently toss with cornstarch until evenly coated."
+        },
+        {
+          "step": 2,
+          "text": "Heat 1 tablespoon of oil in a large skillet or wok over medium-high heat. Add the tofu in a single layer and cook for 7 to 8 minutes, turning occasionally, until golden brown and crisp on all sides. Transfer tofu to a plate."
+        },
+        {
+          "step": 3,
+          "text": "In the same skillet, add the remaining 1/2 tablespoon of oil along with the minced garlic and ginger. Cook for 30 seconds until fragrant."
+        },
+        {
+          "step": 4,
+          "text": "Add the broccoli florets and 2 tablespoons of water to the skillet. Cover immediately with a lid and steam for 3 minutes until crisp-tender and bright green."
+        },
+        {
+          "step": 5,
+          "text": "Whisk together the tamari, maple syrup, toasted sesame oil, rice vinegar, and red pepper flakes in a small bowl."
+        },
+        {
+          "step": 6,
+          "text": "Return the crispy tofu to the skillet with the broccoli, pour the sauce mixture over everything, and toss for 1 to 2 minutes until evenly coated and heated through."
+        },
+        {
+          "step": 7,
+          "text": "Divide between two bowls and garnish with toasted sesame seeds and sliced green onions."
+        }
+      ],
+      "tips": [
+        "Pressing the tofu for at least 10 minutes beforehand removes excess moisture, ensuring maximum crispiness.",
+        "Serve over brown rice, quinoa, or rice noodles for a complete meal."
+      ],
+      "nutritionInfo": {
+        "calories": "380",
+        "protein": "22g",
+        "carbs": "26g",
+        "fat": "21g"
+      }
+    }
+  }
+}
