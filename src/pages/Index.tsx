@@ -7,6 +7,7 @@ import { PreferenceSelectors } from '@/components/PreferenceSelectors';
 import { RecipeCard } from '@/components/RecipeCard';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
 import { useRecipeGenerator } from '@/hooks/useRecipeGenerator';
+import { ConflictCard } from '@/components/ConflictCard';
 
 const Index = () => {
   const [ingredients, setIngredients] = useState<string[]>([]);
@@ -15,7 +16,7 @@ const Index = () => {
   const [servings, setServings] = useState(2);
   const [cookingTime, setCookingTime] = useState('any');
 
-  const { isLoading, recipe, generateRecipe, clearRecipe } = useRecipeGenerator();
+  const { isLoading, recipe, conflict, generateRecipe, acceptSwap, dismissConflict, clearRecipe } = useRecipeGenerator();
 
   const handleAddIngredient = (ingredient: string) => {
     setIngredients((prev) => [...prev, ingredient]);
@@ -84,6 +85,12 @@ const Index = () => {
               <LoadingSpinner />
             </CardContent>
           </Card>
+        ) : conflict ? (
+          <ConflictCard
+            conflict={conflict}
+            onAcceptSwap={acceptSwap}
+            onDismiss={dismissConflict}
+          />
         ) : recipe ? (
           <RecipeCard
             recipe={recipe}
