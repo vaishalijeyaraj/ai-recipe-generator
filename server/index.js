@@ -43,6 +43,7 @@ async function checkFeasibility(ingredients, dietaryPreference) {
 
 Check if each ingredient realistically fits a ${dietaryPreference} diet. For any ingredient that does NOT fit, explain it like a chef mentoring a beginner — warm, simple, no jargon, and always include real, approximate numbers to make the difference concrete (like grams of carbs, or whatever is relevant to this diet).
 
+
 Respond with ONLY valid JSON, no markdown fences, matching exactly this structure:
 {
   "feasible": true or false,
@@ -65,6 +66,49 @@ If every ingredient genuinely fits the diet, return "feasible": true and an empt
 
   return JSON.parse(text);
 }
+
+
+
+async function lookupNutrition(ingredientName) {
+  const url = `https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${process.env.USDA_API_KEY}&query=${encodeURIComponent("raw " + ingredientName)}&pageSize=3&dataType=Foundation,SR%20Legacy`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    if (!data.foods || data.foods.length === 0) return null;
+
+    const food = data.foods.find((f) =>
+      f.foodNutrients.some((n) => n.nutrientName === "Energy" && n.unitName === "KCAL")
+    );
+    if (!food) return null;
+
+    const nutrients = {};
+    for (const n of food.foodNutrients) {
+      if (n.nutrientName === "Energy" && n.unitName === "KCAL") nutrients.calories = n.value;
+      if (n.nutrientName === "Protein") nutrients.protein = n.value;
+      if (n.nutrientName === "Carbohydrate, by difference") nutrients.carbs = n.value;
+      if (n.nutrientName === "Total lipid (fat)") nutrients.fat = n.value;
+    }
+
+    return { matchedName: food.description, per100g: nutrients };
+  } catch (err) {
+    console.warn(`  USDA lookup failed for "${ingredientName}":`, err.message);
+    return null;
+  }
+}
+
+async function lookupAllIngredients(ingredients) {
+  const results = await Promise.all(ingredients.map((ing) => lookupNutrition(ing)));
+
+  const found = [];
+  ingredients.forEach((ing, i) => {
+    if (results[i]) found.push({ ingredient: ing, ...results[i] });
+  });
+
+  return found;
+}
+
 
 
 async function critiqueRecipe(recipe, preferences) {
@@ -157,6 +201,11 @@ app.post("/generate-recipe", async (req, res) => {
     cookingTime === "medium" ? "Total cooking time should be between 30-60 minutes." :
     cookingTime === "long" ? "Total cooking time can be over 60 minutes." : "";
 
+  const nutritionData = await lookupAllIngredients(ingredients);
+  const nutritionContext = nutritionData.length > 0
+    ? `\n\nReal nutrition data per 100g (use this to calculate accurate final nutritionInfo, don't guess):\n${nutritionData.map((n) => `- ${n.ingredient} (matched: ${n.matchedName}): ${n.per100g.calories || "?"} kcal, ${n.per100g.protein || "?"}g protein, ${n.per100g.carbs || "?"}g carbs, ${n.per100g.fat || "?"}g fat`).join("\n")}`
+    : "";
+    
   const prompt = `You are a world-class chef. Create a recipe using these main ingredients: ${ingredients.join(", ")}.
 
 Requirements:
@@ -164,6 +213,7 @@ Requirements:
 ${dietaryNote}
 ${cuisineNote}
 ${timeNote}
+${nutritionContext}
 
 Respond with ONLY valid JSON, no markdown fences, matching exactly this structure:
 {
@@ -179,6 +229,8 @@ Respond with ONLY valid JSON, no markdown fences, matching exactly this structur
   "tips": ["tip 1"],
   "nutritionInfo": { "calories": "350", "protein": "25g", "carbs": "30g", "fat": "12g" }
 }`;
+
+  
 
   try {
     const { recipe, wasRefined, finalIssues } = await generateRecipeWithCritic(prompt, {

@@ -83,3 +83,48 @@ mismatch (5 lbs of pork for 2 people), confirming the critic logic itself
 works. This meant the earlier full-pipeline tests that came back
 "wasRefined: false" were the critic correctly approving genuinely
 well-formed recipes, not silently failing to check anything.
+
+
+
+
+## USDA nutrition lookup — two data quality bugs found and fixed
+
+While wiring up real nutrition grounding (looking up actual USDA data instead
+of trusting the AI's estimates), two separate bugs surfaced:
+
+1. A plain search for "chicken breast" matched a lunchmeat product instead of
+   raw chicken, returning no usable nutrient data at all. Fixed by searching
+   for "raw <ingredient>" and picking the first of the top 3 results that
+   actually has energy data attached, instead of blindly trusting the first
+   result.
+
+2. After fixing the match, chicken breast returned 720 calories per 100g —
+   nutritionally impossible (real value is ~172). The USDA database lists
+   energy in two units, kilocalories (kcal) and kilojoules (kJ), and the code
+   was grabbing whichever "Energy" entry appeared first regardless of unit.
+   172 kcal x 4.184 = ~720, confirming it was reading the kJ value and
+   mislabeling it as calories. Fixed by explicitly filtering for unitName
+   === "KCAL".
+
+This was a good reminder that grounding AI output in a "real" external data
+source doesn't automatically make it correct — the integration itself needs
+the same scrutiny as the AI's own output.
+
+
+
+
+
+## Grounding nutrition data with the USDA API
+
+Wired real nutrition lookups (USDA FoodData Central) into the recipe
+generation prompt, so the model calculates nutritionInfo from real per-100g
+data instead of estimating from memory.
+
+Verified this was actually working, not just present, by manually
+recomputing expected values from the raw USDA numbers for a chicken
+breast + broccoli recipe (350g chicken, 250g broccoli, 2 servings) and
+comparing against what the model returned. The manual calculation landed
+at approximately 450 kcal / 40g protein per serving; the model returned
+469 kcal / 41g protein — close enough to confirm it was genuinely doing
+arithmetic on the real data provided, not generating a plausible-sounding
+guess.
