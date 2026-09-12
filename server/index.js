@@ -67,6 +67,65 @@ If every ingredient genuinely fits the diet, return "feasible": true and an empt
 }
 
 
+async function critiqueRecipe(recipe, preferences) {
+  const prompt = `You are a meticulous head chef reviewing a recipe for accuracy before it goes out to a customer. Check this recipe against the requirements it was supposed to meet.
+
+Recipe: ${JSON.stringify(recipe)}
+
+Requirements:
+- Should serve ${preferences.servings} ${preferences.servings === 1 ? "person" : "people"}
+- Should primarily use these ingredients: ${preferences.ingredients.join(", ")}
+- Cooking time requirement: ${preferences.cookingTime === "quick" ? "under 30 minutes total" : preferences.cookingTime === "medium" ? "30-60 minutes total" : preferences.cookingTime === "long" ? "over 60 minutes" : "no specific requirement"}
+
+Check specifically for:
+1. Do the ingredient amounts realistically make sense for the stated number of servings?
+2. Does totalTime realistically match what the instructions describe (add up the actual cooking actions)?
+3. Are the ingredients the user provided actually central to the dish, not just a garnish?
+
+Respond with ONLY valid JSON, no markdown fences:
+{
+  "valid": true or false,
+  "issues": ["specific problem 1", "specific problem 2"]
+}
+
+Only flag real, clear problems. If the recipe is reasonable, return "valid": true and an empty issues array.`;
+
+  const result = await generateWithRetry(prompt);
+  let text = result.response.text().trim();
+  text = text.replace(/```(?:json)?\s*/g, "").replace(/```\s*$/g, "").trim();
+  return JSON.parse(text);
+}
+
+async function generateRecipeWithCritic(basePrompt, preferences, maxAttempts = 2) {
+  let currentPrompt = basePrompt;
+  let lastRecipe = null;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const result = await generateWithRetry(currentPrompt);
+    let text = result.response.text().trim();
+    text = text.replace(/```(?:json)?\s*/g, "").replace(/```\s*$/g, "").trim();
+    const recipe = JSON.parse(text);
+
+    if (!recipe.title || !recipe.ingredients || !recipe.instructions) {
+      throw new Error("Invalid recipe structure returned by model");
+    }
+
+    lastRecipe = recipe;
+
+    const critique = await critiqueRecipe(recipe, preferences);
+
+    if (critique.valid || attempt === maxAttempts) {
+      return { recipe, wasRefined: attempt > 1, finalIssues: critique.valid ? [] : critique.issues };
+    }
+
+    console.log(`  Critic found issues on attempt ${attempt}, refining:`, critique.issues);
+    currentPrompt = `${basePrompt}\n\nA previous attempt at this recipe had these problems: ${critique.issues.join("; ")}. Please fix these specific issues in your response.`;
+  }
+
+  return { recipe: lastRecipe, wasRefined: true, finalIssues: [] };
+}
+
+
 app.post("/check-feasibility", async (req, res) => {
   const { ingredients, dietaryPreference } = req.body;
 
@@ -122,17 +181,13 @@ Respond with ONLY valid JSON, no markdown fences, matching exactly this structur
 }`;
 
   try {
-    const result = await generateWithRetry(prompt);
-    let text = result.response.text().trim();
-    text = text.replace(/```(?:json)?\s*/g, "").replace(/```\s*$/g, "").trim();
+    const { recipe, wasRefined, finalIssues } = await generateRecipeWithCritic(prompt, {
+      ingredients,
+      servings,
+      cookingTime,
+    });
 
-    const recipe = JSON.parse(text);
-
-    if (!recipe.title || !recipe.ingredients || !recipe.instructions) {
-      throw new Error("Invalid recipe structure returned by model");
-    }
-
-    res.json({ recipe });
+    res.json({ recipe, wasRefined, finalIssues });
   } catch (err) {
     console.error("Error generating recipe:", err.message);
     res.status(500).json({ error: err.message || "Failed to generate recipe" });

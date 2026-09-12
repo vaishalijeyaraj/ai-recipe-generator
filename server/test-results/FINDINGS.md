@@ -66,3 +66,20 @@ solving a problem I actually found, instead of a problem I assumed existed.
 The dietary-violation check I originally planned to build wouldn't have
 caught this at all — it was solving the wrong problem. Running the tests
 first changed what I built.
+
+
+
+
+## Testing the critic in isolation
+
+Before trusting "wasRefined: false" results from the full pipeline, I wanted
+to confirm the critic actually catches real problems rather than passing
+everything by default. I hand-wrote a deliberately broken recipe (claims
+"20 minutes" total time, but instructions describe an 8-hour roast) and ran
+it through the critic function directly, bypassing the generator entirely.
+
+The critic correctly flagged both the time contradiction and a serving-size
+mismatch (5 lbs of pork for 2 people), confirming the critic logic itself
+works. This meant the earlier full-pipeline tests that came back
+"wasRefined: false" were the critic correctly approving genuinely
+well-formed recipes, not silently failing to check anything.
