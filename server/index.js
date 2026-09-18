@@ -246,7 +246,7 @@ Respond with ONLY valid JSON, no markdown fences, matching exactly this structur
   }
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Recipe server running on http://localhost:${PORT}`);
 });
